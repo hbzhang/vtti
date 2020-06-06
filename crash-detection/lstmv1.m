@@ -1,9 +1,10 @@
-
+cler all
+close all
 
 [XTrain, YTrain, XTest, YTest] = train_test_split();
 
  
-%[,YTrain] = getdata(); %japaneseVowelsTrainData;
+%[XTrain,YTrain] = japaneseVowelsTrainData;
 XTrain(1:5)
 
 figure
