@@ -1,10 +1,9 @@
- load("traindata.mat");
 
- XTrain = train_data_x;
- YTrain = train_data_y;
+
+[XTrain, YTrain, XTest, YTest] = train_test_split();
+
  
- 
-%[XTrain,YTrain] = getdata(); %japaneseVowelsTrainData;
+%[,YTrain] = getdata(); %japaneseVowelsTrainData;
 XTrain(1:5)
 
 figure
@@ -32,11 +31,11 @@ ylabel("Length")
 title("Sorted Data")
 
 
-miniBatchSize = 27;
+miniBatchSize = 10;
 
 
 inputSize = 3;
-numHiddenUnits = 100;
+numHiddenUnits = 20;
 numClasses = 3;
 
 layers = [ ...
@@ -47,7 +46,7 @@ layers = [ ...
     classificationLayer]
 
 maxEpochs = 100;
-miniBatchSize = 27;
+ 
 
 options = trainingOptions('adam', ...
     'ExecutionEnvironment','cpu', ...
@@ -61,7 +60,7 @@ options = trainingOptions('adam', ...
 
 net = trainNetwork(XTrain,YTrain,layers,options);
 
-[XTest,YTest] = japaneseVowelsTestData;
+%[XTest,YTest] = japaneseVowelsTestData;
 XTest(1:3)
 
 numObservationsTest = numel(XTest);
@@ -73,7 +72,7 @@ end
 XTest = XTest(idx);
 YTest = YTest(idx);
 
-miniBatchSize = 27;
+ 
 YPred = classify(net,XTest, ...
     'MiniBatchSize',miniBatchSize, ...
     'SequenceLength','longest');
