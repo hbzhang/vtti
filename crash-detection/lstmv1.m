@@ -1,4 +1,4 @@
-cler all
+clear all
 close all
 
 [XTrain, YTrain, XTest, YTest] = train_test_split();
