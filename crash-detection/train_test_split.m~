@@ -7,8 +7,8 @@ close all
 
 load("traindata.mat");
 
- AllTrainX = train_data_x(500:length(train_data_x), 1);
- ALlTrainY = train_data_y(500:length(train_data_x), 1);
+ AllTrainX = train_data_x(500:;
+ ALlTrainY = train_data_y;
  
  
  length_train = round(length(AllTrainX) - length(AllTrainX)/10);
