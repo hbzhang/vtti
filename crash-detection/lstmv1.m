@@ -50,7 +50,7 @@ miniBatchSize = 10;
 
 
 inputSize = 3;
-numHiddenUnits = 300;
+numHiddenUnits = 250;
 numClasses = 3;
 
 layers = [ ...
