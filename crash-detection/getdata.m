@@ -110,10 +110,13 @@ ACC(1,:) = x_acc;
 ACC(2,:) = y_acc;
 ACC(3,:) = z_acc;
 
+%Now we want to use less data for training
+ACC_new = zeros(1,length(z_acc));
+ACC_new(1,:) = z_acc;
 
 index_2 = index_2 + 1;
 
-train_data_x{index_2,1} = z_acc ;
+train_data_x{index_2,1} = ACC_new ;
 
 end
     
