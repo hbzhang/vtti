@@ -113,13 +113,13 @@ ACC(3,:) = z_acc;
 
 index_2 = index_2 + 1;
 
-train_data_x{index_2,1} = ACC ;
+train_data_x{index_2,1} = z_acc ;
 
 end
     
 end
 
-save ('traindata.mat','train_data_x', 'train_data_y');
+save ('traindata_zacc.mat','train_data_x', 'train_data_y');
 
 
 

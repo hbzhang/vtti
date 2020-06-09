@@ -5,7 +5,7 @@ clear all
 
 close all
 
-load("traindata.mat");
+load("traindata_zacc.mat");
 
  AllTrainX = train_data_x(1:length(train_data_x), 1);
  ALlTrainY = train_data_y(1:length(train_data_x), 1);
