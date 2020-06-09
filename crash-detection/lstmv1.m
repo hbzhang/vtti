@@ -49,7 +49,7 @@ title("Sorted Data")
 miniBatchSize = 10;
 
 
-inputSize = 3;
+inputSize = 1;
 numHiddenUnits = 100;
 numClasses = 3;
 
