@@ -58,7 +58,7 @@ layers = [ ...
     bilstmLayer(numHiddenUnits,'OutputMode','last')
     fullyConnectedLayer(numClasses)
     softmaxLayer
-    classificationLayer]G
+    classificationLayer]
 
 maxEpochs = 2;
  
