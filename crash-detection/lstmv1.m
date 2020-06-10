@@ -60,7 +60,7 @@ layers = [ ...
     softmaxLayer
     classificationLayer]
 
-maxEpochs = 5;
+maxEpochs = 20;
  
 
 options = trainingOptions('adam', ...
