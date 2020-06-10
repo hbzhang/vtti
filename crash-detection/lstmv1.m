@@ -46,7 +46,7 @@ ylabel("Length")
 title("Sorted Data")
 
 
-miniBatchSize = 10;
+miniBatchSize = 5;
 
 
 inputSize = 1;
